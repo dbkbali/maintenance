@@ -18,11 +18,9 @@
    <div class="wrap">
         <h1>What2do.asia is down for <%= reason ? reason : "maintenance" %></h1>
 
-         <p>We are conducting <%= reason ? reason : "maintenance" %><br>
-           as of <%= Time.now.strftime("%F %H:%M %Z") %>.</p>
+         <p>as at: <%= Time.now.strftime("%F %H:%M %Z") %>.</p>
 
-        <p>We will be back <%= deadline ? deadline : "shortly" %>.</p>
-        <p> Thanks for your patience.</p>
+        <p>We will be back <%= deadline ? deadline : "shortly" %>. Thanks for your patience.</p>
     </div>
 </body>
 </html>
